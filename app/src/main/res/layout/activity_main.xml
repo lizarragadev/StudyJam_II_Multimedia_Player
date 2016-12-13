@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="6"
+    tools:context="com.miramicodigo.studyjam_ii_multimedia_player.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/googleio"
+            android:scaleType="centerCrop"/>
+        <ImageView
+            android:id="@+id/ivAlpha"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/kygo"
+            android:alpha="0.7"
+            android:scaleType="centerCrop"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@color/colorPrimaryDark">
+            <Button
+                android:id="@+id/btnPlay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Play"
+                android:layout_weight="1"
+                android:drawableBottom="@drawable/ic_play_circle_filled_black_24dp"
+                android:onClick="play"/>
+            <Button
+                android:id="@+id/btnPause"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pause"
+                android:layout_weight="1"
+                android:drawableBottom="@drawable/ic_pause_circle_filled_black_24dp"                android:onClick="pause"/>
+            <Button
+                android:id="@+id/btnStop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stop"
+                android:layout_weight="1"
+                android:drawableBottom="@drawable/ic_stop_black_24dp"
+                android:onClick="stop"/>
+    </LinearLayout>
+</LinearLayout>
