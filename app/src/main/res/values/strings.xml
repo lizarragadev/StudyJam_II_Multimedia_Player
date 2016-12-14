@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">MediaPlayer</string>
     <string name="main.name">Reproductor</string>
+    <string name="main.btn.play">Play</string>
+    <string name="main.btn.pause">Pause</string>
+    <string name="main.btn.stop">Stop</string>
 </resources>

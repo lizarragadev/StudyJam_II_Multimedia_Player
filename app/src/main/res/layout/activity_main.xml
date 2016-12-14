@@ -36,23 +36,27 @@
             <Button
                 android:id="@+id/btnPlay"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Play"
+                android:layout_height="match_parent"
+                android:text="@string/main.btn.play"
                 android:layout_weight="1"
                 android:drawableBottom="@drawable/ic_play_circle_filled_black_24dp"
-                android:onClick="play"/>
+                android:onClick="play"
+                android:layout_margin="@dimen/main.btn.margin"/>
             <Button
                 android:id="@+id/btnPause"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Pause"
+                android:layout_height="match_parent"
+                android:text="@string/main.btn.pause"
+                android:layout_margin="@dimen/main.btn.margin"
                 android:layout_weight="1"
-                android:drawableBottom="@drawable/ic_pause_circle_filled_black_24dp"                android:onClick="pause"/>
+                android:drawableBottom="@drawable/ic_pause_circle_filled_black_24dp"
+                android:onClick="pause"/>
             <Button
                 android:id="@+id/btnStop"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Stop"
+                android:layout_height="match_parent"
+                android:text="@string/main.btn.stop"
+                android:layout_margin="@dimen/main.btn.margin"
                 android:layout_weight="1"
                 android:drawableBottom="@drawable/ic_stop_black_24dp"
                 android:onClick="stop"/>
